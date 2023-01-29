@@ -15,7 +15,7 @@ export default function Home() {
       </Head>
       <Navbar />
       <main>
-        <h1>Devansh Sangule</h1>
+        <h1>Contact</h1>
       </main>
     </>
   )
