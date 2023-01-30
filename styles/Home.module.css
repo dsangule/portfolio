@@ -1,3 +1,10 @@
 .body{
-    background-color: white;
+    background-image: url('../public/background.svg');
+}
+.title{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 50px;
 }
