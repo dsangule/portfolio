@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <div className={styles.navIconFlex}>
         <div className={styles.navIcon}>
-          <Image src='/../public/TempIcon.png' width={40} height={40}></Image>
+          <Image src='/TempIcon.png' width={40} height={40}></Image>
         </div>
       </div>
       <ul>
