@@ -1,21 +1,42 @@
 .navbar{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    vertical-align: middle;
     background-color:dimgray;
     color: lightgray;
     opacity: 85%;
-    box-shadow: 0px 0px 5px 0px grey;
     text-shadow: 5px;
     margin: 0px;
     padding: 0px;
 }
 
+.navbar .navIconFlex{
+    align-content: left;
+    height: 40px;
+    width: 20%;
+    border-radius: 5px;
+    align-content: center;
+    vertical-align: middle;
+}
+
+.navIcon{
+    height: 40px;
+    width: 40px;
+    border: 30px;
+    border-radius: 10px;
+}
+
 .navbar ul{
     display: flex;
+    width: 80%;
     justify-content: right;
     list-style: none;
 }
 
 .navbar ul li{
-    padding: 10px 20px 10px 20px;
+    padding: 10px 10px 10px 10px;
+    font-size: small;
     font-weight: bold;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -23,4 +44,13 @@
 .navbar ul li:hover{
     background-color: gray;
     color: white;
+}
+
+@media (min-width:600px){
+    .navbar ul li{
+        padding: 10px 20px 10px 20px;
+        font-size: medium;
+        font-weight: bold;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
 }
