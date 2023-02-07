@@ -5,24 +5,38 @@ import Image from 'next/image'
 
 const Navbar = () => {
   return (
-    <nav className={styles.navbar}>
-      <div className={styles.navIconFlex}>
-        <div className={styles.navIcon}>
-          <Image src='/TempIcon.png' width={40} height={40}></Image>
-        </div>
-      </div>
-      <ul>
-        <Link href={'/'}>
-          <li>Home</li>
-        </Link>
-        <Link href={'/about'}>
-          <li>About</li>
-        </Link>
-        <Link href={'/contact'}>
-          <li>Contact</li>
-        </Link>
+    <div className={styles.container}>
+      <Link href='/' className={styles.link}>
+        DevanshS
+      </Link>
+      <ul className={styles.list}>
+        <li className={styles.listItem}>
+          <Link href='/products/design' className={styles.link}>
+            Design
+          </Link>
+        </li>
+        <li className={styles.listItem}>
+          <Link href='/products/development' className={styles.link}>
+            Development
+          </Link>
+        </li>
+        <li className={styles.listItem}>
+          <Link href='/products/production' className={styles.link}>
+            Production
+          </Link>
+        </li>
+        <li className={styles.listItem}>
+          <Link href='/products/photography' className={styles.link}>
+            Photography
+          </Link>
+        </li>
+        <li className={styles.listItem}>
+          <Link href='/products/contact' className={styles.link}>
+            Contact
+          </Link>
+        </li>
       </ul>
-    </nav>
+    </div>
   )
 }
 
